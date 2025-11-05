@@ -1,0 +1,2228 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tableau_lluvia_umbral' inline='true' name='federated.0njrw191dn0k4214wjvjt02m5j8i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_lluvia_umbral' name='textscan.0yw0eqj1ce80w31euquwr1cfkg5t'>
+            <connection class='textscan' directory='C:/Users/kevin/Downloads' filename='tableau_lluvia_umbral.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0yw0eqj1ce80w31euquwr1cfkg5t' name='tableau_lluvia_umbral.csv' table='[tableau_lluvia_umbral#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='string' name='station' ordinal='0' />
+            <column datatype='datetime' name='timestamp' ordinal='1' />
+            <column datatype='integer' name='lluvia_binaria' ordinal='2' />
+            <column datatype='integer' name='prediction' ordinal='3' />
+            <column datatype='real' name='probability_positive' ordinal='4' />
+            <column datatype='real' name='air_temperature_dry_bulb_C' ordinal='5' />
+            <column datatype='real' name='relative_humidity_hourly_percent' ordinal='6' />
+            <column datatype='real' name='wind_speed_hourly_ms' ordinal='7' />
+            <column datatype='real' name='atmospheric_pressure_station_level_mB' ordinal='8' />
+            <column datatype='real' name='dew_point_temperature_C' ordinal='9' />
+            <column datatype='integer' name='hora_del_dia' ordinal='10' />
+            <column datatype='integer' name='mes' ordinal='11' />
+            <column datatype='integer' name='estacion' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_lluvia_umbral.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>station</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[station]</local-name>
+            <parent-name>[tableau_lluvia_umbral.csv]</parent-name>
+            <remote-alias>station</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[tableau_lluvia_umbral.csv]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lluvia_binaria</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lluvia_binaria]</local-name>
+            <parent-name>[tableau_lluvia_umbral.csv]</parent-name>
+            <remote-alias>lluvia_binaria</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prediction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prediction]</local-name>
+            <parent-name>[tableau_lluvia_umbral.csv]</parent-name>
+            <remote-alias>prediction</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>probability_positive</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[probability_positive]</local-name>
+            <parent-name>[tableau_lluvia_umbral.csv]</parent-name>
+            <remote-alias>probability_positive</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>air_temperature_dry_bulb_C</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[air_temperature_dry_bulb_C]</local-name>
+            <parent-name>[tableau_lluvia_umbral.csv]</parent-name>
+            <remote-alias>air_temperature_dry_bulb_C</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>relative_humidity_hourly_percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[relative_humidity_hourly_percent]</local-name>
+            <parent-name>[tableau_lluvia_umbral.csv]</parent-name>
+            <remote-alias>relative_humidity_hourly_percent</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wind_speed_hourly_ms</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wind_speed_hourly_ms]</local-name>
+            <parent-name>[tableau_lluvia_umbral.csv]</parent-name>
+            <remote-alias>wind_speed_hourly_ms</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>atmospheric_pressure_station_level_mB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[atmospheric_pressure_station_level_mB]</local-name>
+            <parent-name>[tableau_lluvia_umbral.csv]</parent-name>
+            <remote-alias>atmospheric_pressure_station_level_mB</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dew_point_temperature_C</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dew_point_temperature_C]</local-name>
+            <parent-name>[tableau_lluvia_umbral.csv]</parent-name>
+            <remote-alias>dew_point_temperature_C</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hora_del_dia</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hora_del_dia]</local-name>
+            <parent-name>[tableau_lluvia_umbral.csv]</parent-name>
+            <remote-alias>hora_del_dia</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mes]</local-name>
+            <parent-name>[tableau_lluvia_umbral.csv]</parent-name>
+            <remote-alias>mes</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>estacion</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[estacion]</local-name>
+            <parent-name>[tableau_lluvia_umbral.csv]</parent-name>
+            <remote-alias>estacion</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Cálculo1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RUNNING_SUM(SUM([probability_positive]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='tableau_lluvia_umbral.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]' role='measure' type='quantitative' />
+      <column caption='air temperature dry bulb C' datatype='real' name='[air_temperature_dry_bulb_C]' role='measure' type='quantitative' />
+      <column caption='atmospheric pressure station level mB' datatype='real' name='[atmospheric_pressure_station_level_mB]' role='measure' type='quantitative' />
+      <column caption='dew point temperature C' datatype='real' name='[dew_point_temperature_C]' role='measure' type='quantitative' />
+      <column caption='Estacion' datatype='integer' name='[estacion]' role='measure' type='quantitative' />
+      <column caption='Hora Del Dia' datatype='integer' name='[hora_del_dia]' role='dimension' type='quantitative' />
+      <column caption='Llover/No llueve' datatype='integer' name='[lluvia_binaria]' role='measure' type='quantitative' />
+      <column caption='Mes' datatype='integer' name='[mes]' role='dimension' type='quantitative' />
+      <column caption='Predicción' datatype='integer' name='[prediction]' role='measure' type='quantitative' />
+      <column caption='Probability Positive' datatype='real' name='[probability_positive]' role='measure' type='quantitative' />
+      <column caption='Relative Humidity Hourly Percent' datatype='real' name='[relative_humidity_hourly_percent]' role='measure' type='quantitative' />
+      <column caption='Station' datatype='string' name='[station]' role='dimension' type='nominal' />
+      <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+      <column caption='Wind Speed Hourly Ms' datatype='real' name='[wind_speed_hourly_ms]' role='measure' type='quantitative' />
+      <column-instance column='[station]' derivation='None' name='[none:station:nk]' pivot='key' type='nominal' />
+      <column-instance column='[timestamp]' derivation='Year-Trunc' name='[tyr:timestamp:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[timestamp]' derivation='Year' name='[yr:timestamp:ok]' pivot='key' type='ordinal' />
+      <group caption='Acción (Station)' hidden='true' name='[Action (Station)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[station]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (Station,AÑO(Timestamp),AÑO(Timestamp))' hidden='true' name='[Action (Station,YEAR(Timestamp),YEAR(Timestamp))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[station]' />
+          <groupfilter function='level-members' level='[yr:timestamp:ok]' />
+          <groupfilter function='level-members' level='[tyr:timestamp:ok]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusiones (AÑO(Timestamp),AÑO(Timestamp),Station)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tyr:timestamp:ok]' />
+          <groupfilter function='level-members' level='[yr:timestamp:ok]' />
+          <groupfilter function='level-members' level='[none:station:nk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Inclusiones (AÑO(Timestamp),AÑO(Timestamp),Station)]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tyr:timestamp:ok]' />
+          <groupfilter function='level-members' level='[yr:timestamp:ok]' />
+          <groupfilter function='level-members' level='[none:station:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/kevin/AppData/Local/Temp/TableauTemp/#TableauTemp_08aawei06is85118n5jf30zdepfk.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/04/2025 01:55:12 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>station</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[station]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>station</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_lluvia_umbral.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>timestamp</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[timestamp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>timestamp</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_lluvia_umbral.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lluvia_binaria</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[lluvia_binaria]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lluvia_binaria</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_lluvia_umbral.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prediction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[prediction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prediction</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tableau_lluvia_umbral.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>probability_positive</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[probability_positive]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>probability_positive</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tableau_lluvia_umbral.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>air_temperature_dry_bulb_C</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[air_temperature_dry_bulb_C]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>air_temperature_dry_bulb_C</remote-alias>
+              <ordinal>5</ordinal>
+              <family>tableau_lluvia_umbral.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>relative_humidity_hourly_percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[relative_humidity_hourly_percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>relative_humidity_hourly_percent</remote-alias>
+              <ordinal>6</ordinal>
+              <family>tableau_lluvia_umbral.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wind_speed_hourly_ms</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[wind_speed_hourly_ms]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wind_speed_hourly_ms</remote-alias>
+              <ordinal>7</ordinal>
+              <family>tableau_lluvia_umbral.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>atmospheric_pressure_station_level_mB</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[atmospheric_pressure_station_level_mB]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>atmospheric_pressure_station_level_mB</remote-alias>
+              <ordinal>8</ordinal>
+              <family>tableau_lluvia_umbral.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dew_point_temperature_C</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dew_point_temperature_C]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dew_point_temperature_C</remote-alias>
+              <ordinal>9</ordinal>
+              <family>tableau_lluvia_umbral.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hora_del_dia</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hora_del_dia]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hora_del_dia</remote-alias>
+              <ordinal>10</ordinal>
+              <family>tableau_lluvia_umbral.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[mes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mes</remote-alias>
+              <ordinal>11</ordinal>
+              <family>tableau_lluvia_umbral.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>estacion</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[estacion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>estacion</remote-alias>
+              <ordinal>12</ordinal>
+              <family>tableau_lluvia_umbral.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:station:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;A117&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;A703&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;A002&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;A854&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;A876&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;A407&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;A614&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;A913&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;A713&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;A238&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;A818&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;A202&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;A866&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;A020&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;A860&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;A423&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;A551&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;A889&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;A363&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;A615&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;A024&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;A616&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;A241&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;A820&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;A313&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;A835&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;A334&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;A844&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;A440&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;A001&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;A729&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;A555&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;A110&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;A618&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;A322&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;A855&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;A899&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;A317&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;A352&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;A214&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;A731&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;A521&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;A011&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;A601&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;A902&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[yr:timestamp:ok]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#2e628d'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#306c94'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#32779c'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#3482a4'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#358cac'>
+              <bucket>2015</bucket>
+            </map>
+            <map to='#3c97b2'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>2013</bucket>
+            </map>
+            <map to='#57abbe'>
+              <bucket>2012</bucket>
+            </map>
+            <map to='#69b5c3'>
+              <bucket>2011</bucket>
+            </map>
+            <map to='#79bec8'>
+              <bucket>2010</bucket>
+            </map>
+            <map to='#89c7cc'>
+              <bucket>2009</bucket>
+            </map>
+            <map to='#99d0d0'>
+              <bucket>2008</bucket>
+            </map>
+            <map to='#aadad4'>
+              <bucket>2007</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>2002</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos Mexicanos&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tableau_lluvia_umbral.csv' id='tableau_lluvia_umbral.csv_EB5681C08D5C41C184AD30086202E580'>
+            <properties context=''>
+              <relation connection='textscan.0yw0eqj1ce80w31euquwr1cfkg5t' name='tableau_lluvia_umbral.csv' table='[tableau_lluvia_umbral#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+                  <column datatype='string' name='station' ordinal='0' />
+                  <column datatype='datetime' name='timestamp' ordinal='1' />
+                  <column datatype='integer' name='lluvia_binaria' ordinal='2' />
+                  <column datatype='integer' name='prediction' ordinal='3' />
+                  <column datatype='real' name='probability_positive' ordinal='4' />
+                  <column datatype='real' name='air_temperature_dry_bulb_C' ordinal='5' />
+                  <column datatype='real' name='relative_humidity_hourly_percent' ordinal='6' />
+                  <column datatype='real' name='wind_speed_hourly_ms' ordinal='7' />
+                  <column datatype='real' name='atmospheric_pressure_station_level_mB' ordinal='8' />
+                  <column datatype='real' name='dew_point_temperature_C' ordinal='9' />
+                  <column datatype='integer' name='hora_del_dia' ordinal='10' />
+                  <column datatype='integer' name='mes' ordinal='11' />
+                  <column datatype='integer' name='estacion' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Mover' name='[Action1_42E4676B13314BB9B7A52E39045C4743]'>
+      <activation type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='KPI Lluvia'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='14'>¿Llovera?</run>
+            <run>Æ&#10;&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_lluvia_umbral' name='federated.0njrw191dn0k4214wjvjt02m5j8i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0njrw191dn0k4214wjvjt02m5j8i'>
+            <column caption='Llover/No llueve' datatype='integer' name='[lluvia_binaria]' role='measure' type='quantitative' />
+            <column caption='Probability Positive' datatype='real' name='[probability_positive]' role='measure' type='quantitative' />
+            <column caption='Station' datatype='string' name='[station]' role='dimension' type='nominal' />
+            <column-instance column='[lluvia_binaria]' derivation='Sum' name='[sum:lluvia_binaria:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[probability_positive]' derivation='Sum' name='[sum:probability_positive:qk]' pivot='key' type='quantitative' />
+            <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[timestamp]' derivation='Year-Trunc' name='[tyr:timestamp:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[timestamp]' derivation='Year' name='[yr:timestamp:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[Action (Station,YEAR(Timestamp),YEAR(Timestamp))]'>
+            <groupfilter function='reorder-dimensionality' user:ui-action-filter='[Action1_42E4676B13314BB9B7A52E39045C4743]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[station]' member='&quot;A601&quot;' />
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[tyr:timestamp:ok]' member='#2020-01-01 00:00:00#' />
+                  <groupfilter function='member' level='[yr:timestamp:ok]' member='2020' />
+                </groupfilter>
+              </groupfilter>
+              <order>
+                <hierarchy name='[station]' />
+                <hierarchy name='[yr:timestamp:ok]' />
+                <hierarchy name='[tyr:timestamp:ok]' />
+              </order>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.0njrw191dn0k4214wjvjt02m5j8i].[Action (Station,YEAR(Timestamp),YEAR(Timestamp))]</column>
+            <column>[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' value='center' />
+            <format attr='text-orientation' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' value='0' />
+            <format attr='text-format' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' value='N' />
+            <format attr='text-align' value='left' />
+            <format attr='text-align' data-class='subtotal' value='left' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+            <format attr='text-align' data-class='total' value='left' />
+            <format attr='text-align' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:lluvia_binaria:qk]' value='right' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0.5' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' max='1.0' min='0.0' num-steps='6' symmetric='false' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#e15759</color>
+                <color>#e06365</color>
+                <color>#df6f70</color>
+                <color>#de7b7c</color>
+                <color>#de8788</color>
+                <color>#dd9394</color>
+                <color>#dc9fa0</color>
+                <color>#dbaaab</color>
+                <color>#dbb6b7</color>
+                <color>#dac2c2</color>
+                <color>#d9cdcd</color>
+                <color>#d9d9d9</color>
+                <color>#cacfd4</color>
+                <color>#bbc5cf</color>
+                <color>#adbccb</color>
+                <color>#a0b2c6</color>
+                <color>#93a9c2</color>
+                <color>#86a1bd</color>
+                <color>#7a98b9</color>
+                <color>#6e90b4</color>
+                <color>#6388b0</color>
+                <color>#5880ab</color>
+                <color>#4e79a7</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='18' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:lluvia_binaria:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{54C95D37-DA40-496C-9D36-F57CB974EFA8}' />
+    </worksheet>
+    <worksheet name='KPI Predicción'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='14'>Predicción</run>
+            <run>Æ&#10;&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_lluvia_umbral' name='federated.0njrw191dn0k4214wjvjt02m5j8i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0njrw191dn0k4214wjvjt02m5j8i'>
+            <column caption='Predicción' datatype='integer' name='[prediction]' role='measure' type='quantitative' />
+            <column caption='Probability Positive' datatype='real' name='[probability_positive]' role='measure' type='quantitative' />
+            <column caption='Station' datatype='string' name='[station]' role='dimension' type='nominal' />
+            <column-instance column='[prediction]' derivation='Sum' name='[sum:prediction:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[probability_positive]' derivation='Sum' name='[sum:probability_positive:qk]' pivot='key' type='quantitative' />
+            <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[timestamp]' derivation='Year-Trunc' name='[tyr:timestamp:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[timestamp]' derivation='Year' name='[yr:timestamp:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[Action (Station,YEAR(Timestamp),YEAR(Timestamp))]'>
+            <groupfilter function='reorder-dimensionality' user:ui-action-filter='[Action1_42E4676B13314BB9B7A52E39045C4743]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[station]' member='&quot;A601&quot;' />
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[tyr:timestamp:ok]' member='#2020-01-01 00:00:00#' />
+                  <groupfilter function='member' level='[yr:timestamp:ok]' member='2020' />
+                </groupfilter>
+              </groupfilter>
+              <order>
+                <hierarchy name='[station]' />
+                <hierarchy name='[yr:timestamp:ok]' />
+                <hierarchy name='[tyr:timestamp:ok]' />
+              </order>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' included-values='all' />
+          <slices>
+            <column>[federated.0njrw191dn0k4214wjvjt02m5j8i].[Action (Station,YEAR(Timestamp),YEAR(Timestamp))]</column>
+            <column>[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' value='center' />
+            <format attr='text-orientation' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' value='0' />
+            <format attr='text-format' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' value='N' />
+            <format attr='text-align' value='left' />
+            <format attr='text-align' data-class='subtotal' value='left' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+            <format attr='text-align' data-class='total' value='left' />
+            <format attr='text-align' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:prediction:qk]' value='right' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0.5' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' max='1.0' min='0.0' num-steps='6' symmetric='false' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#e15759</color>
+                <color>#e06365</color>
+                <color>#df6f70</color>
+                <color>#de7b7c</color>
+                <color>#de8788</color>
+                <color>#dd9394</color>
+                <color>#dc9fa0</color>
+                <color>#dbaaab</color>
+                <color>#dbb6b7</color>
+                <color>#dac2c2</color>
+                <color>#d9cdcd</color>
+                <color>#d9d9d9</color>
+                <color>#cacfd4</color>
+                <color>#bbc5cf</color>
+                <color>#adbccb</color>
+                <color>#a0b2c6</color>
+                <color>#93a9c2</color>
+                <color>#86a1bd</color>
+                <color>#7a98b9</color>
+                <color>#6e90b4</color>
+                <color>#6388b0</color>
+                <color>#5880ab</color>
+                <color>#4e79a7</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='18' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:prediction:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1985E566-74DE-4F09-ADE8-0027256BDAB7}' />
+    </worksheet>
+    <worksheet name='KPI Probabilidad de éxito por estación'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='14'>Exito en la predicción</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_lluvia_umbral' name='federated.0njrw191dn0k4214wjvjt02m5j8i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0njrw191dn0k4214wjvjt02m5j8i'>
+            <column-instance column='[probability_positive]' derivation='Sum' name='[cum:sum:probability_positive:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column caption='Probability Positive' datatype='real' name='[probability_positive]' role='measure' type='quantitative' />
+            <column caption='Station' datatype='string' name='[station]' role='dimension' type='nominal' />
+            <column-instance column='[probability_positive]' derivation='Sum' name='[sum:probability_positive:qk]' pivot='key' type='quantitative' />
+            <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[timestamp]' derivation='Year-Trunc' name='[tyr:timestamp:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[timestamp]' derivation='Year' name='[yr:timestamp:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[Action (Station,YEAR(Timestamp),YEAR(Timestamp))]'>
+            <groupfilter function='reorder-dimensionality' user:ui-action-filter='[Action1_42E4676B13314BB9B7A52E39045C4743]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[station]' member='&quot;A601&quot;' />
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[tyr:timestamp:ok]' member='#2020-01-01 00:00:00#' />
+                  <groupfilter function='member' level='[yr:timestamp:ok]' member='2020' />
+                </groupfilter>
+              </groupfilter>
+              <order>
+                <hierarchy name='[station]' />
+                <hierarchy name='[yr:timestamp:ok]' />
+                <hierarchy name='[tyr:timestamp:ok]' />
+              </order>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.0njrw191dn0k4214wjvjt02m5j8i].[Action (Station,YEAR(Timestamp),YEAR(Timestamp))]</column>
+            <column>[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' value='center' />
+            <format attr='text-orientation' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' value='0' />
+            <format attr='text-format' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' value='N' />
+            <format attr='text-format' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[cum:sum:probability_positive:qk]' value='n#,##0.00&quot;%&quot;;-#,##0.00&quot;%&quot;' />
+            <format attr='text-align' value='left' />
+            <format attr='text-align' data-class='subtotal' value='left' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+            <format attr='text-align' data-class='total' value='left' />
+            <format attr='text-orientation' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[cum:sum:probability_positive:qk]' value='0' />
+            <format attr='wrap' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[cum:sum:probability_positive:qk]' value='off' />
+            <format attr='vertical-align' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[cum:sum:probability_positive:qk]' value='top' />
+            <format attr='text-align' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[cum:sum:probability_positive:qk]' value='right' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0.5' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' max='1.0' min='0.0' num-steps='6' symmetric='false' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#e15759</color>
+                <color>#e06365</color>
+                <color>#df6f70</color>
+                <color>#de7b7c</color>
+                <color>#de8788</color>
+                <color>#dd9394</color>
+                <color>#dc9fa0</color>
+                <color>#dbaaab</color>
+                <color>#dbb6b7</color>
+                <color>#dac2c2</color>
+                <color>#d9cdcd</color>
+                <color>#d9d9d9</color>
+                <color>#cacfd4</color>
+                <color>#bbc5cf</color>
+                <color>#adbccb</color>
+                <color>#a0b2c6</color>
+                <color>#93a9c2</color>
+                <color>#86a1bd</color>
+                <color>#7a98b9</color>
+                <color>#6e90b4</color>
+                <color>#6388b0</color>
+                <color>#5880ab</color>
+                <color>#4e79a7</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='18' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' />
+              <text column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[cum:sum:probability_positive:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DAC4E96B-FA1E-4075-9DE8-060B72E54890}' />
+    </worksheet>
+    <worksheet name='Predicciones vs Valor real por Estadicion '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Predicciones por estación</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_lluvia_umbral' name='federated.0njrw191dn0k4214wjvjt02m5j8i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0njrw191dn0k4214wjvjt02m5j8i'>
+            <column caption='Llover/No llueve' datatype='integer' name='[lluvia_binaria]' role='measure' type='quantitative' />
+            <column caption='Predicción' datatype='integer' name='[prediction]' role='measure' type='quantitative' />
+            <column caption='Probability Positive' datatype='real' name='[probability_positive]' role='measure' type='quantitative' />
+            <column caption='Station' datatype='string' name='[station]' role='dimension' type='nominal' />
+            <column-instance column='[lluvia_binaria]' derivation='Sum' name='[sum:lluvia_binaria:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[prediction]' derivation='Sum' name='[sum:prediction:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[probability_positive]' derivation='Sum' name='[sum:probability_positive:qk]' pivot='key' type='quantitative' />
+            <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[timestamp]' derivation='Year-Trunc' name='[tyr:timestamp:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[timestamp]' derivation='Year' name='[yr:timestamp:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[Action (Station,YEAR(Timestamp),YEAR(Timestamp))]'>
+            <groupfilter function='reorder-dimensionality' user:ui-action-filter='[Action1_42E4676B13314BB9B7A52E39045C4743]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[station]' member='&quot;A601&quot;' />
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[tyr:timestamp:ok]' member='#2020-01-01 00:00:00#' />
+                  <groupfilter function='member' level='[yr:timestamp:ok]' member='2020' />
+                </groupfilter>
+              </groupfilter>
+              <order>
+                <hierarchy name='[station]' />
+                <hierarchy name='[yr:timestamp:ok]' />
+                <hierarchy name='[tyr:timestamp:ok]' />
+              </order>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0njrw191dn0k4214wjvjt02m5j8i].[Action (Station,YEAR(Timestamp),YEAR(Timestamp))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:lluvia_binaria:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:prediction:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]</rows>
+        <cols>([federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:lluvia_binaria:qk] + [federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:prediction:qk])</cols>
+      </table>
+      <simple-id uuid='{B09D6263-9242-4BFA-8758-FD2C7A87ABC3}' />
+    </worksheet>
+    <worksheet name='Variables climatologicas anuales'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='18'>&lt;</run>
+            <run bold='true' fontsize='18'>Sheet Name</run>
+            <run bold='true' fontsize='18'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_lluvia_umbral' name='federated.0njrw191dn0k4214wjvjt02m5j8i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0njrw191dn0k4214wjvjt02m5j8i'>
+            <column caption='air temperature dry bulb C' datatype='real' name='[air_temperature_dry_bulb_C]' role='measure' type='quantitative' />
+            <column caption='dew point temperature C' datatype='real' name='[dew_point_temperature_C]' role='measure' type='quantitative' />
+            <column-instance column='[station]' derivation='None' name='[none:station:nk]' pivot='key' type='nominal' />
+            <column caption='Relative Humidity Hourly Percent' datatype='real' name='[relative_humidity_hourly_percent]' role='measure' type='quantitative' />
+            <column caption='Station' datatype='string' name='[station]' role='dimension' type='nominal' />
+            <column-instance column='[air_temperature_dry_bulb_C]' derivation='Sum' name='[sum:air_temperature_dry_bulb_C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[dew_point_temperature_C]' derivation='Sum' name='[sum:dew_point_temperature_C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[relative_humidity_hourly_percent]' derivation='Sum' name='[sum:relative_humidity_hourly_percent:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[wind_speed_hourly_ms]' derivation='Sum' name='[sum:wind_speed_hourly_ms:qk]' pivot='key' type='quantitative' />
+            <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[timestamp]' derivation='Year-Trunc' name='[tyr:timestamp:ok]' pivot='key' type='ordinal' />
+            <column caption='Wind Speed Hourly Ms' datatype='real' name='[wind_speed_hourly_ms]' role='measure' type='quantitative' />
+            <column-instance column='[timestamp]' derivation='Year' name='[yr:timestamp:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[Exclusiones (AÑO(Timestamp),AÑO(Timestamp),Station)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[tyr:timestamp:ok]' />
+                <groupfilter function='level-members' level='[yr:timestamp:ok]' />
+                <groupfilter function='level-members' level='[none:station:nk]' />
+              </groupfilter>
+              <groupfilter function='reorder-dimensionality'>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:station:nk]' member='&quot;A363&quot;' />
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[tyr:timestamp:ok]' member='#2011-01-01 00:00:00#' />
+                    <groupfilter function='member' level='[yr:timestamp:ok]' member='2011' />
+                  </groupfilter>
+                </groupfilter>
+                <order>
+                  <hierarchy name='[tyr:timestamp:ok]' />
+                  <hierarchy name='[yr:timestamp:ok]' />
+                  <hierarchy name='[none:station:nk]' />
+                </order>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0njrw191dn0k4214wjvjt02m5j8i].[tyr:timestamp:ok]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:air_temperature_dry_bulb_C:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0njrw191dn0k4214wjvjt02m5j8i].[Exclusiones (AÑO(Timestamp),AÑO(Timestamp),Station)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:air_temperature_dry_bulb_C:qk]' value='72' />
+            <format attr='width' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:dew_point_temperature_C:qk]' value='72' />
+            <format attr='width' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:relative_humidity_hourly_percent:qk]' value='72' />
+            <format attr='width' field='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:wind_speed_hourly_ms:qk]' value='72' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[yr:timestamp:ok]' />
+              <lod column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[none:station:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:air_temperature_dry_bulb_C:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[yr:timestamp:ok]' />
+              <lod column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[none:station:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:dew_point_temperature_C:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[yr:timestamp:ok]' />
+              <lod column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[none:station:nk]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:relative_humidity_hourly_percent:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[yr:timestamp:ok]' />
+              <lod column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[none:station:nk]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:wind_speed_hourly_ms:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[yr:timestamp:ok]' />
+              <lod column='[federated.0njrw191dn0k4214wjvjt02m5j8i].[none:station:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:air_temperature_dry_bulb_C:qk] + ([federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:dew_point_temperature_C:qk] + ([federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:relative_humidity_hourly_percent:qk] + [federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:wind_speed_hourly_ms:qk])))</rows>
+        <cols>[federated.0njrw191dn0k4214wjvjt02m5j8i].[tyr:timestamp:ok]</cols>
+      </table>
+      <simple-id uuid='{98B9F872-A927-4D7F-8B9C-2225E5542E41}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='tableau_lluvia_umbral' name='federated.0njrw191dn0k4214wjvjt02m5j8i' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0njrw191dn0k4214wjvjt02m5j8i'>
+        <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+        <column-instance column='[timestamp]' derivation='Year-Trunc' name='[tyr:timestamp:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='7' param='horz' type-v2='layout-flow' w='75739' x='23778' y='999'>
+            <zone h='98002' id='5' type-v2='layout-basic' w='62583' x='23778' y='999'>
+              <zone h='79900' id='3' name='Variables climatologicas anuales' w='62583' x='23778' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='18102' id='11' name='KPI Probabilidad de éxito por estación' w='20861' x='23778' y='80899'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='18102' id='12' name='KPI Predicción' w='20861' x='65500' y='80899'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='18102' id='14' name='KPI Lluvia' w='20861' x='44639' y='80899'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='218' h='98002' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='13156' x='86361' y='999'>
+              <zone h='50437' id='8' name='Variables climatologicas anuales' param='[federated.0njrw191dn0k4214wjvjt02m5j8i].[tyr:timestamp:ok]' type-v2='filter' w='13156' x='86361' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43071' id='9' name='Variables climatologicas anuales' pane-specification-id='1' param='[federated.0njrw191dn0k4214wjvjt02m5j8i].[yr:timestamp:ok]' type-v2='color' w='13156' x='86361' y='51436'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='98002' id='10' name='Predicciones vs Valor real por Estadicion ' w='23295' x='483' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='15' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone fixed-size='280' h='98002' id='10' is-fixed='true' name='Predicciones vs Valor real por Estadicion ' w='23295' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='50437' id='8' mode='checkdropdown' name='Variables climatologicas anuales' param='[federated.0njrw191dn0k4214wjvjt02m5j8i].[tyr:timestamp:ok]' type-v2='filter' w='13156' x='86361' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='79900' id='3' is-fixed='true' name='Variables climatologicas anuales' w='62583' x='23778' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='43071' id='9' name='Variables climatologicas anuales' pane-specification-id='1' param='[federated.0njrw191dn0k4214wjvjt02m5j8i].[yr:timestamp:ok]' type-v2='color' w='13156' x='86361' y='51436'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='137' h='18102' id='11' is-fixed='true' name='KPI Probabilidad de éxito por estación' w='20861' x='23778' y='80899'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='137' h='18102' id='14' is-fixed='true' name='KPI Lluvia' w='20861' x='44639' y='80899'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='137' h='18102' id='12' is-fixed='true' name='KPI Predicción' w='20861' x='65500' y='80899'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AE2E161B-79CA-406B-8264-C0FE1E798755}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Predicciones vs Valor real por Estadicion '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[none:station:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4187E9A6-C5A3-4A0C-8AD9-FE2093BBD494}' />
+    </window>
+    <window class='worksheet' name='Variables climatologicas anuales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='1' param='[federated.0njrw191dn0k4214wjvjt02m5j8i].[yr:timestamp:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[none:station:nk]</field>
+            <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[yr:timestamp:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3B13EF59-DF00-44CA-B9E3-97FB8580CFFD}' />
+    </window>
+    <window class='worksheet' name='KPI Probabilidad de éxito por estación'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card param='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='2' param='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[:Measure Names]</field>
+            <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[none:mes:qk]</field>
+            <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[none:station:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{16E722E3-4B16-42BC-8322-FDB5CF99093B}' />
+    </window>
+    <window class='worksheet' name='KPI Predicción'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='173'>
+            <card param='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[:Measure Names]</field>
+            <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[none:mes:qk]</field>
+            <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[none:station:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4383A2A5-49DE-44D9-A702-AD8848E524E4}' />
+    </window>
+    <window class='worksheet' name='KPI Lluvia'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card param='[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:probability_positive:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[:Measure Names]</field>
+            <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[none:mes:qk]</field>
+            <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[none:station:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A335B1A6-5DBB-4BAE-B5CD-DB2030D7D90A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='KPI Lluvia'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Predicción'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Probabilidad de éxito por estación'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Predicciones vs Valor real por Estadicion '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Variables climatologicas anuales'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[tyr:timestamp:ok]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:air_temperature_dry_bulb_C:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[none:station:nk]</field>
+                    <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:air_temperature_dry_bulb_C:qk]</field>
+                    <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:dew_point_temperature_C:qk]</field>
+                    <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:relative_humidity_hourly_percent:qk]</field>
+                    <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[sum:wind_speed_hourly_ms:qk]</field>
+                    <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[tyr:timestamp:ok]</field>
+                    <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[yr:timestamp:ok]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;A601&quot;</value>
+                  <value>23.699999999999999</value>
+                  <value>20.699999999999999</value>
+                  <value>84.0</value>
+                  <value>0.40000000000000002</value>
+                  <value>#2020-01-01 00:00:00#</value>
+                  <value>2020</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+          <highlight>
+            <color-one-way>
+              <field>[federated.0njrw191dn0k4214wjvjt02m5j8i].[yr:timestamp:ok]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{CFC0FD7A-48B3-4291-BCC7-DC528C241990}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='KPI Lluvia' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='KPI Predicción' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='KPI Probabilidad de éxito por estación' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Predicciones vs Valor real por Estadicion ' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Variables climatologicas anuales' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
